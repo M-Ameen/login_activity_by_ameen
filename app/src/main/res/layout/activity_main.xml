@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/iv_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:src="@drawable/login" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Verify Your Number"
+        android:textColor="#3c5257"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:maxLines="3"
+        android:paddingLeft="@dimen/_20sdp"
+        android:paddingRight="20dp"
+        android:text="Please enter your mobile no to receive a verification code. Carrier rates may apply."
+        android:textColor="#999999"
+        android:textSize="@dimen/_15sdp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/_10sdp">
+
+        <com.hbb20.CountryCodePicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp" />
+
+        <EditText
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="wrap_content"
+            android:inputType="number|phone" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_continue"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/btn_background"
+        android:gravity="center"
+        android:padding="@dimen/_10sdp"
+        android:text="Continue"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_othetime"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:gravity="center"
+        android:padding="@dimen/_10sdp"
+        android:text="No, Other Time"
+        android:textAllCaps="true"
+        android:textColor="#999999"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="" />
+
+</LinearLayout>

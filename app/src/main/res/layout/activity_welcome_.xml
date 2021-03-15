@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".Welcome_Activity">
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:gravity="center"
+        android:text="Welcome!"
+        android:textColor="#fcfcfd"
+        android:textSize="@dimen/_40sdp" />
+
+    <TextView
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center"
+        android:text="Hope You enjoy the stay"
+        android:textAllCaps="true"
+        android:textColor="#b5dbdf"
+        android:textSize="@dimen/_15sdp"
+
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:src="@drawable/horizontal_line" />
+
+    <TextView
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center"
+        android:text="Log In"
+        android:textColor="#fcfcfd"
+        android:textSize="@dimen/_15sdp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_20sdp"
+        android:paddingRight="@dimen/_20sdp">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/et_mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:drawableLeft="@drawable/ic_baseline_email_24"
+            android:drawablePadding="@dimen/_5sdp"
+            android:hint="Enter your e-mail"
+            android:inputType="textEmailAddress"
+            android:textColor="#fcfcfd"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelAlwaysShown="true"
+            app:met_floatingLabelText="Email"
+            app:met_floatingLabelTextColor="#fcfcfd"
+            app:met_textColorHint="#fcfcfd"
+            app:met_underlineColor="#fcfcfd"></com.rengwuxian.materialedittext.MaterialEditText>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:drawablePadding="@dimen/_5sdp"
+            android:hint="Enter your password"
+            android:inputType="textPassword"
+            android:textColor="@color/teal_200"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelAlwaysShown="true"
+            app:met_floatingLabelText="Password"
+            app:met_floatingLabelTextColor="#fcfcfd"
+            app:met_textColorHint="#fcfcfd"
+            app:met_underlineColor="#fcfcfd"></com.rengwuxian.materialedittext.MaterialEditText>
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_movetonext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:backgroundTint="#fcfcfd"
+        android:src="@drawable/arrow_right" />
+
+    <TextView
+        android:id="@+id/tv_othetime"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:gravity="center"
+        android:padding="@dimen/_10sdp"
+        android:text="Sign up for another account?"
+        android:textColor="#fcfcfd"
+        android:textSize="@dimen/_10sdp"
+        android:textStyle=""
+
+        />
+
+</LinearLayout>
